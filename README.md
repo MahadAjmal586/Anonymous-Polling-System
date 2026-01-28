@@ -52,7 +52,7 @@ Perfect for classrooms, events, quick surveys, or fun group decisions — zero a
 - Lightweight and fast (no database overhead)
 
 ## Project Structure
-
+```
 Anonymous-Polling-System/
 │
 ├── frontend/              # Client-side HTML, CSS, JavaScript
@@ -62,4 +62,5 @@ Anonymous-Polling-System/
 ├── .dockerignore
 ├── .idea/                 # (IDE settings — gitignore recommended)
 └── README.md
+```
 
