@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anon Poll • Real-time • Anonymous</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Anonymous Poll</h1>
+    </header>
+
+    <main>
+
+      <!-- Create poll form -->
+      <section id="create-section" class="card">
+        <h2>Create New Poll</h2>
+        <form id="create-form">
+          <label>Question</label>
+          <input type="text" id="question" placeholder="What's your favorite...?" required>
+
+          <label>Options (one per line)</label>
+          <textarea id="options" rows="5" placeholder="Pepperoni&#10;Mushroom&#10;Pineapple&#10;..." required></textarea>
+
+          <button type="submit">Create Poll</button>
+        </form>
+      </section>
+
+      <!-- Poll view -->
+      <section id="poll-section" class="card hidden">
+        <div class="poll-header">
+          <h2 id="poll-question"></h2>
+          <div class="status-badges">
+            <span id="status" class="badge"></span>
+            <span id="ends-at" class="badge subtle"></span>
+          </div>
+        </div>
+
+        <div id="options-list" class="options"></div>
+
+        <div class="poll-footer">
+          <div>Poll ID: <strong id="poll-id-display"></strong></div>
+          <button id="close-poll-btn" class="danger hidden">Close Poll</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <small>Real-time • Anonymous • Expires after 48h</small>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/src/poll.js"></script>
+</body>
+</html>
