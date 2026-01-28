@@ -52,3 +52,14 @@ Perfect for classrooms, events, quick surveys, or fun group decisions — zero a
 - Lightweight and fast (no database overhead)
 
 ## Project Structure
+
+Anonymous-Polling-System/
+│
+├── frontend/              # Client-side HTML, CSS, JavaScript
+├── main.py                # FastAPI application + WebSocket endpoints
+├── requirments.txt        # Python dependencies (note: typo — should be requirements.txt)
+├── pyproject.toml         # Project metadata (optional)
+├── .dockerignore
+├── .idea/                 # (IDE settings — gitignore recommended)
+└── README.md
+
